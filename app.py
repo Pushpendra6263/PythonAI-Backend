@@ -4,7 +4,7 @@
 # import os
 
 # app = Flask(__name__)
-# CORS(app, origins="http://localhost:3000")
+# CORS(app, origins="https://pythonai.netlify.app/")
 
 # @app.route('/chat', methods=['POST'])
 # def chat():
