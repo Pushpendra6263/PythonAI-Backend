@@ -4,7 +4,7 @@ import google.generativeai as genai
 import os
 
 app = Flask(__name__)
-CORS(app, origins="http://localhost:3000")
+CORS(app, origins="https://pythonai.netlify.app/")
 
 @app.route('/')
 def home():
@@ -39,7 +39,9 @@ def chat():
         return jsonify({"response": f"An error occurred: {str(e)}"}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # app.run(debug=True)
+    port = int("PORT", 5000)
+    app.run(host="0.0.0.0", port=port, debug=True)
 
 
 
