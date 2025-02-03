@@ -4,7 +4,8 @@ import google.generativeai as genai
 import os
 
 app = Flask(__name__)
-CORS(app, origins="https://pythonai.netlify.app/")
+# CORS(app, origins="https://pythonai.netlify.app/")
+CORS(app)
 
 @app.route('/')
 def home():
